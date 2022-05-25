@@ -1,0 +1,170 @@
+0000.000 (0) Opened log file at time: Tue, 24 May 2022 09:45:37 +0000 on https://www.lovc3692.odns.fr
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.12 WP: 5.9.3 PHP: 7.4.29 (litespeed, Linux camulus.o2switch.net 4.18.0-348.12.2.lve.el7h.x86_64 #1 SMP Mon Jan 24 05:45:10 EST 2022 x86_64) MySQL: 10.5.16-MariaDB (max packet size=268435456) WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 4096M (used: 25.2M | 28M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.044 (0) Free space on disk containing Updraft's temporary directory: 4428003.7 MB
+0000.047 (0) Tasks: Backup files: 1 (schedule: weekly) Backup DB:  (schedule: daily)
+0000.049 (0) Processed schedules. Tasks now: Backup files: 1 Backup DB: 
+0000.052 (0) Semaphore (f, fnpsl_options) being initialised
+0000.055 (0) Requesting semaphore lock (f) (apparently not via scheduler)
+0000.058 (0) Set semaphore last lock (f) time to 2022-05-24 09:45:37
+0000.059 (0) Semaphore lock (f) complete
+0000.064 (0) Backup run: resumption=0, nonce=adab0e7e7c34, file_nonce=adab0e7e7c34 begun at=1653385537 (0s ago), job type=backup
+0000.066 (0) Scheduling a resumption (1) after 300 seconds (1653385837) in case this run gets aborted
+0000.082 (0) Checking if we have a zip executable available
+0000.083 (0) Testing: /usr/bin/zip
+0000.090 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.092 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.093 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.094 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.096 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.103 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.104 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.115 (0) Working binary zip found: /usr/bin/zip
+0000.118 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.119 (0) Creation of backups of directories: beginning
+0000.123 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.295 (0) Total entities for the zip file: 506 directories, 3266 files (0 skipped as non-modified), 41.8 MB
+0000.304 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.310 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.316 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.322 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.328 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.334 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 600 files added (on-disk size: 0 KB)
+0000.340 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 700 files added (on-disk size: 0 KB)
+0000.346 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 800 files added (on-disk size: 0 KB)
+0000.351 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 900 files added (on-disk size: 0 KB)
+0000.357 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1000 files added (on-disk size: 0 KB)
+0000.359 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (9.8 MB, 3266 files batched, 1001 (1001) added so far); re-opening (prior size: 0 KB)
+0000.922 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: size is now: 2.90 MB
+0000.931 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1100 files added (on-disk size: 2949.3 KB)
+0000.936 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1200 files added (on-disk size: 2949.3 KB)
+0000.942 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1300 files added (on-disk size: 2949.3 KB)
+0000.947 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1400 files added (on-disk size: 2949.3 KB)
+0000.953 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1500 files added (on-disk size: 2949.3 KB)
+0000.959 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1600 files added (on-disk size: 2949.3 KB)
+0000.965 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1700 files added (on-disk size: 2949.3 KB)
+0000.970 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1800 files added (on-disk size: 2949.3 KB)
+0000.974 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 1900 files added (on-disk size: 2949.3 KB)
+0000.979 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2000 files added (on-disk size: 2949.3 KB)
+0000.980 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (7 MB, 3266 files batched, 1001 (2002) added so far); re-opening (prior size: 2949.3 KB)
+0001.402 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: size is now: 5.20 MB
+0001.410 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2100 files added (on-disk size: 5313.4 KB)
+0001.414 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2200 files added (on-disk size: 5313.4 KB)
+0001.419 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2300 files added (on-disk size: 5313.4 KB)
+0001.424 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2400 files added (on-disk size: 5313.4 KB)
+0001.428 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2500 files added (on-disk size: 5313.4 KB)
+0001.433 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2600 files added (on-disk size: 5313.4 KB)
+0001.437 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2700 files added (on-disk size: 5313.4 KB)
+0001.441 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2800 files added (on-disk size: 5313.4 KB)
+0001.445 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 2900 files added (on-disk size: 5313.4 KB)
+0001.450 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 3000 files added (on-disk size: 5313.4 KB)
+0001.451 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 1000 files added on this batch (20.4 MB, 3266 files batched, 1001 (3003) added so far); re-opening (prior size: 5313.4 KB)
+0003.045 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: size is now: 11.00 MB
+0003.053 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 3100 files added (on-disk size: 11279.5 KB)
+0003.057 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.tmp: 3200 files added (on-disk size: 11279.5 KB)
+0004.209 (0) Creating zip file manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.list-temp.tmp)
+0004.233 (0) Successfully created zip file manifest (size: 268068)
+0004.433 (0) Created plugins zip (0) - 12913.7 KB in 4.3 s (3025.5 KB/s) (sha1: fa9fb303c1e52bc20e11f4e33a1676888bef027e, sha256: a9cc054b8d1ab7c11e8fdff2ebd045f8e1f78df0c5ea8e2576d2daad06c8227f)
+0004.436 (0) Beginning creation of dump of themes (split every: 400 MB)
+0004.487 (0) Total entities for the zip file: 74 directories, 361 files (0 skipped as non-modified), 8.7 MB
+0004.490 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.492 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip.tmp: 200 files added (on-disk size: 0 KB)
+0004.495 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip.tmp: 300 files added (on-disk size: 0 KB)
+0004.785 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip.tmp: size is now: 6.90 MB
+0004.800 (0) Creating zip file manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip.list-temp.tmp)
+0004.803 (0) Successfully created zip file manifest (size: 25362)
+0004.991 (0) Created themes zip (0) - 7060.8 KB in 0.5 s (13780.1 KB/s) (sha1: 1ea9307412890e39873936a13e1177ceb58cf87e, sha256: 321de31e58d03d224db28793b99a2eb16727788100efc14cf8bfc12d948a88fb)
+0004.995 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0004.996 (0) Looking for candidates to backup in: /home/lovc3692/public_html/wp-content/uploads
+0004.998 (0) finding files: 2022: adding to list (1)
+0004.999 (0) finding files: wp-cerber-16GBYQ8JPAVOXNSZ: adding to list (2)
+0005.000 (0) finding files: .htaccess: adding to list (3)
+0005.005 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0005.054 (0) Total entities for the zip file: 3 directories, 2 files (0 skipped as non-modified), 0 MB
+0005.063 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip.tmp: size is now: 0.00 MB
+0005.068 (0) Creating zip file manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip.list-temp.tmp)
+0005.069 (0) Successfully created zip file manifest (size: 105)
+0005.074 (0) Created uploads zip (0) - 0.9 KB in 0 s (37.7 KB/s) (sha1: ae4cb8fffc627d80dc67ad373a0bfe90253c56ef, sha256: ec637d9ecc2d5940746a2d8e0332818de9328663d675c60cb64760cbe26b07fe)
+0005.079 (0) Beginning backup of other directories found in the content directory (index: 0)
+0005.081 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0005.082 (0) Looking for candidates to backup in: /home/lovc3692/public_html/wp-content
+0005.083 (0) finding files: upgrade: skipping: excluded by options
+0005.085 (0) finding files: themes: skipping: this is the themes directory
+0005.086 (0) finding files: updraft: skipping: this is the updraft directory
+0005.087 (0) finding files: plugins: skipping: this is the plugins directory
+0005.088 (0) finding files: languages: adding to list (1)
+0005.090 (0) finding files: uploads: skipping: this is the uploads directory
+0005.091 (0) finding files: index.php: adding to list (2)
+0005.141 (0) Total entities for the zip file: 3 directories, 105 files (0 skipped as non-modified), 4 MB
+0005.146 (0) Zip: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip.tmp: 100 files added (on-disk size: 0 KB)
+0005.694 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip.tmp: size is now: 1.10 MB
+0005.700 (0) Creating zip file manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip.list-temp.tmp)
+0005.702 (0) Successfully created zip file manifest (size: 6957)
+0005.735 (0) Created others zip (0) - 1146.3 KB in 0.6 s (1910.8 KB/s) (sha1: 6740dca4508ce0a0af9a9c5504844c8e11a5ffa8, sha256: e9c4523d0bde530990c23432b18566f6c6fa320e4389fb0c67390546acb968eb)
+0005.743 (0) Saving backup status to database (elements: 8)
+0005.746 (0) No database backup (wp) - not part of this run
+0005.750 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0005.751 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0005.752 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0005.753 (0) backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip: others: This file has not yet been successfully uploaded: will queue
+0005.754 (0) Saving backup history. Total backup size: 20.6 MB
+0005.757 (0) Requesting upload of the files that have not yet been successfully uploaded (4)
+0005.761 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0005.762 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-3c63c3489630278ac13cedcbcde25f83)
+0008.194 (0) Google Drive: quota usage: used=56024.7 MB, total=133120 MB, available=77095.3 MB
+0008.196 (0) Google Drive: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip: Attempting to upload to Google Drive (into folder id: 1Vt3j5deCtKcC1ebPXqQxT9WNkVx8jnj5)
+0008.627 (0) Googledrive chunked upload: 7.9 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 27.5 / 34)
+0008.816 (0) Googledrive chunked upload: 23.8 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 27.6 / 34)
+0009.338 (0) Googledrive chunked upload: 55.5 % uploaded (7340032 - increasing chunk size to 8192 KB - memory usage: 27.6 / 34)
+0010.612 (0) Googledrive chunked upload: 100 % uploaded (7340032)
+0010.617 (0) Google Drive: OK: Archive backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip uploaded in 2.42 seconds
+0010.618 (0) Recording as successfully uploaded: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip
+0010.626 (0) Deleting local file: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip: OK
+0010.627 (0) Deleting zip manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-plugins.zip.list.tmp)
+0010.975 (0) Google Drive: quota usage: used=56037.3 MB, total=133120 MB, available=77082.7 MB
+0010.978 (0) Google Drive: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip: Attempting to upload to Google Drive (into folder id: 1Vt3j5deCtKcC1ebPXqQxT9WNkVx8jnj5)
+0011.426 (0) Googledrive chunked upload: 14.5 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 27.5 / 34)
+0011.611 (0) Googledrive chunked upload: 43.5 % uploaded (3145728 - increasing chunk size to 4096 KB - memory usage: 27.6 / 34)
+0012.830 (0) Googledrive chunked upload: 100 % uploaded (3145728)
+0012.834 (0) Google Drive: OK: Archive backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip uploaded in 1.86 seconds
+0012.836 (0) Recording as successfully uploaded: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip
+0012.842 (0) Deleting local file: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip: OK
+0012.843 (0) Deleting zip manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-themes.zip.list.tmp)
+0013.526 (0) Google Drive: quota usage: used=56044.2 MB, total=133120 MB, available=77075.8 MB
+0013.528 (0) Google Drive: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip: Attempting to upload to Google Drive (into folder id: 1Vt3j5deCtKcC1ebPXqQxT9WNkVx8jnj5)
+0014.738 (0) Googledrive chunked upload: 100 % uploaded
+0014.743 (0) Google Drive: OK: Archive backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip uploaded in 1.21 seconds
+0014.745 (0) Recording as successfully uploaded: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip
+0014.748 (0) Deleting local file: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip: OK
+0014.749 (0) Deleting zip manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-uploads.zip.list.tmp)
+0015.044 (0) Google Drive: quota usage: used=56044.2 MB, total=133120 MB, available=77075.8 MB
+0015.047 (0) Google Drive: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip: Attempting to upload to Google Drive (into folder id: 1Vt3j5deCtKcC1ebPXqQxT9WNkVx8jnj5)
+0015.485 (0) Googledrive chunked upload: 89.3 % uploaded (1048576 - increasing chunk size to 2048 KB - memory usage: 27.5 / 34)
+0016.505 (0) Googledrive chunked upload: 100 % uploaded (1048576)
+0016.510 (0) Google Drive: OK: Archive backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip uploaded in 1.46 seconds
+0016.512 (0) Recording as successfully uploaded: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip
+0016.515 (0) Deleting local file: backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip: OK
+0016.517 (0) Deleting zip manifest (backup_2022-05-24-0945_FNPSL_adab0e7e7c34-others.zip.list.tmp)
+0016.525 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=5
+0016.527 (0) Number of backup sets in history: 2; groups (db): 1
+0016.528 (0) Examining (for databases) backup set with group_id=0, nonce=adab0e7e7c34, datestamp=1653385537 (May 24 2022 09:45:37)
+0016.530 (0) Examining (for databases) backup set with group_id=0, nonce=6c324ab417da, datestamp=1653333252 (May 23 2022 19:14:12)
+0016.530 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0016.531 (0) Number of backup sets in history: 2; groups (files): 1
+0016.532 (0) Examining (for files) backup set with nonce=adab0e7e7c34, datestamp=1653385537 (May 24 2022 09:45:37)
+0016.532 (0) This backup set is the backup set just made, so will not be deleted.
+0016.534 (0) This backup set is the backup set just made, so will not be deleted.
+0016.534 (0) This backup set is the backup set just made, so will not be deleted.
+0016.534 (0) This backup set is the backup set just made, so will not be deleted.
+0016.534 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0016.536 (0) Examining (for files) backup set with nonce=6c324ab417da, datestamp=1653333252 (May 23 2022 19:14:12)
+0016.536 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0016.537 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0016.541 (0) Resume backup (adab0e7e7c34, 0): finish run
+0016.545 (0) Decremented the semaphore (f) by 1
+0016.547 (0) Semaphore (f) unlocked
+0016.548 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0016.553 (0) The backup apparently succeeded and is now complete
+0016.554 (0) Fetching RSS news feed
+0016.658 (0) Fetched RSS news feed; result is a: SimplePie
+0016.683 (0) Sending email ('Fichiers uniquement (la base de données n'était pas incluse dans cette sauvegarde planifiée) (Sauvegarde complète)') report (attachments: 0, size: 0 KB) to: trist...
+0016.993 (0) La sauvegarde a apparemment réussi et est maintenant terminée
