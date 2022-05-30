@@ -8,7 +8,621 @@ Template: salient
 Version: 1.0
 */
 
+/* ======================================================================== 
+0 - GENERAL 
+======================================================================== */
+
+/* Style des boutons */ 
+.cta-style {
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 900;
+    transition: all 0.2s;
+}
+
+.cta-style a {
+    font-size: 15px;
+}
+
+.button-principal {
+    background-color: #66A361;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button-principal a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-secondaire {
+    text-align: center;
+    color: #66A361;
+    border: 1px solid #66A361;
+    max-width: 400px;
+}
+
+.cta-style:hover {
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.0.8);
+    transform:scale(1.02);
+}
+
+/* ========================================================================  
+1 - Header 
+======================================================================== */
+.header h1 {
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.3em;
+}
+
+/* ========================================================================  
+1 - Accueil 
+======================================================================== */
+
+/* header */
+
+#home section{
+    padding: 80px 15%;
+}
+
+.header-section {
+    padding: 200px 15%!important;
+}
+
+.header-section h1 {
+    color: #fff;
+    font-size: 3.5em;
+    margin-bottom: 90px;
+    line-height: 1.3em;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-form label {
+    width: 100%;
+}
+
+.search-form input {
+    background-color: #fff;
+    border-radius: 0px!important;
+    padding: 20px;
+}
+
+body[data-button-style*="slightly_rounded"] input[type=submit] {
+    border-radius: 0px!important;
+}
+
+#selecteur {
+    background-color: #fff;
+    padding: 40px;
+    position: absolute;
+}
+
+/* Header selecteur */
+.section-metier {
+    background-color: #F9F9F9;
+    position: relative;
+    padding-top: 500px!important;
+    text-align: center;
+}
+
+.header-selector {
+    background-color: #fff;
+    position: absolute;
+    top: -50px;
+    right: 50%;
+    transform: translateX(50%);
+    max-width: 1255px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5%!important;
+    text-align: center;
+}
+
+.header-selector h2 {
+    margin-bottom: 40px;
+}
+
+.header-selector p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fiches-metiers_items {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    margin-top: 80px;
+}
+
+.header-selector_box {
+    display: flex; 
+    width: 100%;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector-item {
+    width: 25%;
+}
+
+.facetwp-dropdown {
+    background-color: inherit;
+    border-bottom: 2px solid #403C36;
+}
+
+/* Section formation */ 
+.section-formation {
+    text-align: center;
+}
+.section-formation--head {
+    max-width: 800px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.section-formation--head h2{
+    margin-bottom: 30px;
+}
+
+/* Section FNPSL */ 
+.section-fnpsl {
+    background-color: #F9F9F9;
+    margin-top: 150px;
+}
+
+.section-fnpsl_div {
+    margin-top: -150px;
+    position: relative;
+}
+
+.section-fnpsl_image  {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+}
+
+.section-fnpsl_image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.section-fnpsl_content {
+    max-width: 800px;
+    margin: 0 auto; 
+    background-color: #fff;
+    margin-top: -200px;
+    padding: 80px;
+    position: relative;
+    z-index: 99;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.section-fnpsl_content h2, .section-partenaires_head h2{
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+/* Section partenaires */ 
+.section-partenaires_head {
+    max-width: 700px;
+}
+
+.section-partenaires_logo {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ========================================================================  
+1 - Page des Métiers
+======================================================================== */
+
+#page-metier section {
+    padding: 80px 14%;
+}
+
+.header-template {
+    width: 100%;
+}
+
+.header-template_container {
+    position: relative;
+}
+
+.header-template_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.header-template img{
+    width: 30%; 
+    height: auto;
+    border-radius: 15px;
+}
+
+.header-template h1{
+    font-size: 70px;
+    line-height: 100px;
+    margin-bottom: 60px;
+}
+
+#searchtemplate {
+    position: absolute;
+    bottom: 80px;
+    width: 90%;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.08);
+}
+
+.facet-section {
+    background-color: #FFFCF9;
+    display: flex; 
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.selector-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.08);
+}
+
+.facets-results {
+    width: 70%;
+}
 
 
+/* ========================================================================  
+1 - Template Page Métier Détails
+======================================================================== */
+
+/* Page template général */
+.page-template-custom {
+    max-width: 1425px; 
+    margin: 0 auto;
+    padding: 0px 90px;
+    position: relative;
+}
+
+
+/* Photo bannière */
+.header_template {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: -99;
+}
+
+.header_template img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Contenu de la page métier*/
+.template_content {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: -90px;
+    padding-top: 70px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.template-section {
+    margin-bottom: 70px;
+}
+
+.template_content h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.template_content h2 {
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+
+/* Icone de la page métier */
+.template_content-i {
+    width: 100px; 
+    height: 100px;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 30px;
+    transform: translate(50%, -50%);
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template_content-i img {
+    width: 100%;
+}
+
+/* Qualité card */ 
+.template_content-qualite--items ul {
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.template_content-qualite--items ul li {
+    list-style: none;
+    margin: 0; 
+    padding: 0px 10px;
+    border: 2px solid #66A361;
+    border-radius: 5px;
+}
+
+.template_content-qualite--items ul li h4 {
+    font-size: 14px;
+    margin: 0;
+    color: #66A361;
+    font-weight: 700;
+}
+
+/* Iframe YouTube */ 
+iframe {
+    border-radius: 15px;
+}
+
+/* Débouchés listing */ 
+.template_content-debouches li {
+    margin-bottom: 15px;
+}
+
+/* CTA en fin de page */ 
+.template_content-cta {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+/* ========================================================================  
+2 - Template Page Formation 
+======================================================================== */
+
+/* ========================================================================  
+3 - Cards Formation 
+======================================================================== */
+
+.formations--items {
+    display: flex;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.formations--item{
+    width: 33%;
+    text-align: left;
+    padding: 40px; 
+    border: 1px solid #8F8F8F;
+    background-color: #FFFCF9;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formations--item_header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.formations--item_header a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.formations--item_image {
+    min-width: 60px; 
+    height: 60px; 
+    border-radius: 50%;
+    background-color: #66A361;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formations--item_image svg  {
+    width: 30px;
+    height: auto;
+}
+
+.formations--item_image svg path {
+    fill: #fff!important;
+}
+
+.formations--item_cta {
+    text-align: center;
+    font-weight: 900;
+}
+
+.formations--item a{
+    color: #403C36;
+}
+
+.formations--item_cta a{
+    border-bottom: 4px solid #66A361;
+    padding-bottom: 10px;
+    transition: all 0.1s;
+}
+
+.formations--item a:hover{
+    color: #66A361;
+}
+
+.formations--item span{
+    font-size: 16px;
+    line-height: 28px;
+    margin: 30px 0px;
+    display: block;
+    flex-grow: 1;
+}
+
+/* ========================================================================  
+3 - Cards Métier
+======================================================================== */
+
+.fiches-metiers_items, .formations--items, .facetwp-template {
+    display: flex;
+    width: 100%;
+    gap: 15px; 
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.fiches-formations_items {
+    margin: 40px 0px; 
+}
+
+.card-metier_item {
+    max-width: 33%;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+}
+
+.card-metier_item--bg {
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.card-metier_item--bg img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.card-metier_item--content {
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-metier_item--icon {
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px; 
+    position: absolute; 
+    top: 0px;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(50%, -50%);
+}
+
+.card-metier_item--icon svg{
+    width: 50px;
+    height: auto;
+}
+
+.card-metier_item--icon svg path{
+    fill: #66A361;
+}
+
+.card-metier_item h2 {
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 300;
+    flex-grow: 1;
+}
+
+.card-metier_item p{
+    margin-bottom: 30px;
+}
+
+.card-metier_item--cta {
+    width: 100%;
+    padding: 10px;
+    background-color: #66A361;
+    color: #fff;
+    border-radius: 0px 0px 15px 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+.card-metier_item--cta a{
+    color: #fff;
+}
+
+
+/* ======================================================================== 
+Footer 
+======================================================================== */
+
+.widget h2 {
+    font-size: 18px!important;
+}
+
+.material #footer-outer .widget li a {
+    font-size: 14px!important;
+}
+
+.social {
+    position: absolute;
+    top: -230px;
+    text-align: left;
+}
+
+/* ======================================================================== 
+Responsive Téléphone 
+======================================================================== */
+
+@media screen and (max-width: 640px) {
+    .social {
+        top: -130px;
+        text-align: center;
+    }
+  }
+
+/* ======================================================================== 
+Responsive Tablette 
+======================================================================== */
+
+  @media screen and (min-width: 640px) and (max-width: 940px) {
+    .social {
+        top: -520px;
+        text-align: left;
+    }
+  }
+
+  /* Section Formation */ 
+.template_content-formation .formations--item {
+    width: 50%!important;
+}
 
 

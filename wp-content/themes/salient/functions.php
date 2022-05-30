@@ -34,6 +34,23 @@ if ( ! function_exists( 'nectar_lang_setup' ) ) {
 	}
 }
 
+function fwp_disable_auto_refresh() {
+	?>
+	<script>
+	(function($) {
+		$(function() {
+			if ('undefined' !== typeof FWP) {
+				FWP.auto_refresh = false;
+			}
+		});
+	})(fUtil);
+	</script>
+	<?php
+	}
+	add_action( 'wp_footer', 'fwp_disable_auto_refresh', 100 );
+
+	add_filter( 'facetwp_facet_dropdown_show_counts', '__return_false' );
+
 
 /**
  * General WordPress.
