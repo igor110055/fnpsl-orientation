@@ -71,8 +71,8 @@ get_header();
             <p>Trouve une formation dans les métiers du sport et du loisir. Nous avons répértorié les principales formations qui permettent de travailler dans le domaine de ton choix.<br> Certaines de ces formations sont dispensées par la FNPSL.</p>
         </div>
          <div class="fiches-formations_items">
-         <?php echo do_shortcode('[facetwp template="affichage_formation"]'); ?>
-            <?php /* get_template_part('card-formation') */ ?>
+         <?php /* echo do_shortcode('[facetwp template="affichage_formation"]');*/ ?>
+            <?php get_template_part('card-formation')  ?>
         </div>
         <div class="button-secondaire cta-style">
                 <a href="">Voir toutes les fiches formation</a>

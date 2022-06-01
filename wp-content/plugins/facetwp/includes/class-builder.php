@@ -154,13 +154,8 @@ class FacetWP_Builder
         $value = $source;
 
         $selector = '.fwpl-item.' . $name;
-
-        if ( 'button' == $source ) {
-            $this->css[ $selector . ' button'] = $this->build_styles( $settings );
-        }
-        else {
-            $this->css[ $selector ] = $this->build_styles( $settings );
-        }
+        $selector = ( 'button' == $source ) ? $selector . ' button' : $selector;
+        $this->css[ $selector ] = $this->build_styles( $settings );
 
         if ( 0 === strpos( $source, 'post_' ) || 'ID' == $source ) {
             if ( 'post_title' == $source ) {
@@ -765,10 +760,10 @@ class FacetWP_Builder
             'post_modified' => 'Post Modified'
         ];
 
-        return [
+        return apply_filters( 'facetwp_builder_query_data', [
             'post_types' => $builder_post_types,
             'filter_by' => $data_sources
-        ];
+        ] );
     }
 
 

@@ -743,9 +743,17 @@
             var facet_name = $parent.attr('data-name');
             var opts = FWP.settings[facet_name];
 
+            // custom slider options
+            var slider_opts = FWP.hooks.applyFilters('facetwp/set_options/slider', {
+                range: opts.range,
+                start: opts.start,
+                step: parseFloat(opts.step),
+                connect: true
+            }, { 'facet_name': facet_name });
+
             if ($this.hasClass('ready')) {
                 $this.nodes[0].noUiSlider.updateOptions({
-                    range: FWP.settings[facet_name].range
+                    range: slider_opts.range
                 }, false);
             }
             else {
@@ -756,7 +764,7 @@
                 }
 
                 // fail if start values are null
-                if (null === FWP.settings[facet_name].start[0]) {
+                if (null === slider_opts.start[0]) {
                     return;
                 }
 
@@ -767,15 +775,6 @@
                     FWP.hooks.doAction('facetwp/set_label/slider', $parent);
                     return;
                 }
-
-                // custom slider options
-                var slider_opts = FWP.hooks.applyFilters('facetwp/set_options/slider', {
-                    range: opts.range,
-                    start: opts.start,
-                    step: parseFloat(opts.step),
-                    connect: true
-                }, { 'facet_name': facet_name });
-
 
                 var slider = this;
                 noUiSlider.create(slider, slider_opts);

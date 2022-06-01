@@ -32,10 +32,10 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<header class="page-header">
+		<header class="page-header header-results">
 			<h1 class="page-title">
 				<?php if ( ! empty( $search_query ) ) : ?>
-					<?php printf( __( 'Search Results for: %s' ), esc_html( $search_query ) ); ?>
+					<?php printf( __( 'Résultats trouvés pour votre recherche : %s' ), esc_html( $search_query ) ); ?>
 				<?php else : ?>
 					SearchWP Supplemental Search
 				<?php endif; ?>
@@ -43,23 +43,23 @@ get_header(); ?>
 
 			<!-- BEGIN Supplemental Engine Search form -->
 			<form role="search" method="get" class="search-form"
-			action="<?php echo site_url( 'search-results/' ); ?>">
+			action="<?php echo site_url( 'resultats-sports-loisirs/' ); ?>">
 				<label>
 					<span class="screen-reader-text">
-					<?php echo _x( 'Search for:', 'label' ) ?>
+					<?php echo _x( 'Recherche pour :', 'label' ) ?>
 					</span>
 					<input type="search" class="search-field"
 					name="searchwp"
-					placeholder="<?php echo esc_attr_x( 'Search...', 'placeholder' ) ?>"
+					placeholder="<?php echo esc_attr_x( 'Recherche', 'placeholder' ) ?>"
 					value="<?php echo isset( $_GET['searchwp'] ) ? esc_attr( $_GET['searchwp'] ) : '' ?>"
-					title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+					title="<?php echo esc_attr_x( 'Recherche pour :', 'label' ) ?>" />
 				</label>
 				<input type="submit" class="search-submit"
-					value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+					value="<?php echo esc_attr_x( 'Recherche ', 'submit button' ) ?>" />
 			</form>
 			<!-- END Supplemental Engine Search form -->
 		</header>
-
+		<section class="results-items">
 		<?php if ( ! empty( $search_query ) && ! empty( $search_results ) ) : ?>
 			<?php  foreach ( $search_results as $search_result ) : ?>
 				<article class="page hentry search-result">
@@ -68,10 +68,20 @@ get_header(); ?>
 					case 'WP_Post':
 						$post = $search_result;
 						?>
-						<header class="entry-header"><h2 class="entry-title">
-							<a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-						</h2></header>
-						<div class="entry-summary"><?php the_excerpt(); ?></div>
+						<header class="entry-header">
+							<div class="results-img">
+								<?php the_post_thumbnail(); ?>
+							</div>
+						</header>
+							<div class="results-content">
+								<h2 class="entry-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+								</h2>
+								<div class="entry-summary"><?php the_excerpt(); ?></div>
+								<div class="card-metier_item--cta">
+                					<a href="<?php the_permalink(); ?>">Voir ce résultat</a>
+            					</div>
+							</div>
+							
 						<?php
 						wp_reset_postdata();
 						break;
@@ -92,16 +102,18 @@ get_header(); ?>
 					?>
 				</article>
 			<?php endforeach; ?>
+		</section>
 
-			<?php if ( $searchwp_query->max_num_pages > 1 ) : ?>
+		<?php if ( $searchwp_query->max_num_pages > 1 ) : ?>
 				<div class="navigation pagination" role="navigation">
-					<h2 class="screen-reader-text">Results navigation</h2>
+					<h2 class="screen-reader-text">Recherches</h2>
 					<div class="nav-links"><?php echo wp_kses_post( $search_pagination ); ?></div>
 				</div>
 			<?php endif; ?>
 		<?php elseif ( ! empty( $search_query ) ) : ?>
-			<p>No results found, please search again.</p>
+			<p>Aucun résultats trouvés pour cette recherche, merci de préciser le métier ou la formation que vous recherchez.</p>
 		<?php endif; ?>
+		
 
 	</main> <!-- .site-main -->
 </div> <!-- .content-area -->

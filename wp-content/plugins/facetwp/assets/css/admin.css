@@ -22,6 +22,11 @@ body.settings_page_facetwp {
     font-size: 14px;
 }
 
+body.settings_page_facetwp #screen-meta,
+body.settings_page_facetwp #screen-meta-links {
+    display: none;
+}
+
 a {
     color: var(--blue);
 }
@@ -638,10 +643,15 @@ h3 .facetwp-btn {
 
 .qb-wrap .v-select .vs__search {
     background: none;
-    box-shadow: none;
-    border: none;
     height: 20px;
     min-height: auto;
+    margin: 4px 2px 0;
+}
+
+.qb-wrap .v-select .vs__search,
+.qb-wrap .v-select .vs__search:focus {
+    border: 1px solid var(--grey);
+    padding: 0 8px;
 }
 
 .qb-wrap .v-select .vs__dropdown-toggle {

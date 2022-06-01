@@ -1,4 +1,4 @@
-        <div class="card-metier_item">
+        <div class="card-metier_item" stle="text-align: center;">
             <div class="card-metier_item--bg">
                 <?php the_post_thumbnail(); ?>
             </div>

@@ -53,6 +53,27 @@ Version: 1.0
     transform:scale(1.02);
 }
 
+/* Navigation */ 
+
+#search-btn a{
+	background: #F3F3F3;
+    width: 25px;
+    height: 25px;
+    padding: 10px!important;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top nav>ul>li[class*=button_bordered]>a:before {
+	border-color: #66A361!important;
+}
+
+#menu-item-26 a {
+	color: #66A361!important;
+}
+
 /* ========================================================================  
 1 - Header 
 ======================================================================== */
@@ -257,9 +278,9 @@ body[data-button-style*="slightly_rounded"] input[type=submit] {
 }
 
 .header-template h1{
-    font-size: 70px;
+    font-size: 65px;
     line-height: 100px;
-    margin-bottom: 60px;
+    margin-bottom: 140px;
 }
 
 #searchtemplate {
@@ -274,6 +295,11 @@ body[data-button-style*="slightly_rounded"] input[type=submit] {
     display: flex; 
     gap: 50px;
     align-items: flex-start;
+	text-align: center;
+}
+
+.facets-selector {
+	min-width: 20%;
 }
 
 .selector-box {
@@ -284,7 +310,7 @@ body[data-button-style*="slightly_rounded"] input[type=submit] {
 }
 
 .facets-results {
-    width: 70%;
+    width: 100%;
 }
 
 
@@ -407,6 +433,8 @@ iframe {
 2 - Template Page Formation 
 ======================================================================== */
 
+
+
 /* ========================================================================  
 3 - Cards Formation 
 ======================================================================== */
@@ -484,6 +512,294 @@ iframe {
     margin: 30px 0px;
     display: block;
     flex-grow: 1;
+}
+
+/* ========================================================================  
+1 - Page À Propos
+======================================================================== */
+#about section {
+    padding: 80px 14%;
+}
+
+.about-header {
+    text-align: center;
+}
+
+.about-header h1{
+    font-size: 65px;
+    line-height: 90px;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.about-header h1 span{
+    color:#66A361;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.photo-item {
+    width: 30%;
+}
+
+.photo-item:nth-child(3n) {
+    margin-bottom: -70px;
+}
+
+.photo-item:first-child {
+    margin-top: -30px;
+}
+
+.photo-item:last-child {
+    margin-top: -90px;
+}
+
+.photo-item img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Section de contenu */
+.about-content_header {
+    color: #403C36;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 68px;
+    text-align: center;
+}
+
+.about-content_columns {
+    display: flex;
+    gap: 80px;
+    font-size: 22px;
+    line-height: 38px;
+}
+
+/* Section des valeurs */ 
+.about-values{
+    background-color: #F9F9F9;
+    text-align: center;
+}
+.about-values h2{
+    margin-bottom: 80px;
+}
+
+.values-items {
+    margin-bottom: 40px;
+}
+
+.values-item {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 60px;
+    text-align: left;
+}
+
+.values-item:last-child {
+    margin-bottom: 0px;
+}
+
+.values-item:nth-child(2n+2) {
+    justify-content: flex-start;
+}
+
+.values-item_image {
+    max-width: 70%;
+}
+
+.values-item_content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 65%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 20px 20px 20px 60px;
+    border-left: 8px solid #FD8301;
+    border-radius: 5px;
+}
+
+.values-item:nth-child(2n+2) .values-item_content {
+    right: 0;
+    left: 100%;
+    transform: translate(-100%, -50%);
+}
+
+.values-item_content h3 {
+    margin-bottom: 20px;
+}
+
+.values-item_content h4 {
+    font-size: 18px;
+    color: #FD8301;
+}
+
+.values-item_content p {
+    font-size: 16px;
+}
+
+.about-values .button-principal {
+    display: inline-block;
+}
+
+/* ========================================================================  
+3 - Page contact
+======================================================================== */
+
+.row-form {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 20px;
+}
+
+label {
+    width: 100%;
+}
+
+.row-form:first-child label {
+    max-width: 50%;
+}
+
+/* section informations utiles */
+.contact-box {
+    background-color: #fff;
+    text-align: center;
+    width: 90%;
+    padding: 50px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.08)!important;
+    border-radius: 15px;
+}
+
+#first-info .contact-box {
+    width: 48%;
+    margin: 0 auto!important;
+}
+
+#email-contact .contact-box {
+    margin: 0 auto!important;
+}
+
+
+#first-info {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* ========================================================================  
+3 - Page Template Formation
+======================================================================== */
+.template_content {
+    text-align: center;
+}
+
+.header_template-img {
+    max-height: 400px;
+    overflow: hidden; 
+    border-radius: 15px;
+}
+
+.template-section {
+    text-align: left;
+}
+
+.template_content h3 {
+    color:#66A361;
+    margin: 0 auto;
+    font-size: 16px;
+    display: inline-block;
+    border-bottom: 2px solid #66A361;
+    margin-bottom: 30px;
+}
+
+.template_content-calendrier h2{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.template_content-calendrier svg{
+    width: 30px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.template_content-i svg path{
+    fill: #66A361;
+}
+
+.template_content-prerogratives {
+    background-color: #66A361;
+    padding: 60px; 
+    color: #fff;
+    border-radius: 15px;
+}
+
+.template_content-prerogratives h2{
+    color: #fff;
+}
+
+/* ========================================================================  
+3 - Page de résultats de recherche
+======================================================================== */
+
+.site-main {
+    padding: 150px 14%;
+}
+
+.header-results {
+    margin-bottom: 80px;
+}
+
+.header-results h1 {
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 78px;
+    line-height: 90px;
+}
+
+.search-form {
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.08);
+    border-bottom: 80px;
+}
+
+.results-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+.results-items article{
+    max-width: 30%;
+    box-shadow: 4px 4px 25px rgba(0,0,0,0.08);
+    border-radius: 15px;
+}
+
+.results-content {
+    padding: 40px;
+}
+
+.results-items article h2{
+    font-size: 18px;
+}
+
+.results-img {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.search-result img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0px 0px;
 }
 
 /* ========================================================================  

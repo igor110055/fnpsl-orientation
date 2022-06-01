@@ -46,11 +46,11 @@ get_header();
             <div class="sport-selector selector-box">
                 <h2>Sports</h2>
                 <hr>
-                <?php echo do_shortcode('[facetwp template="sport_checkbox"]'); ?>
+                <?php echo do_shortcode('[facetwp facet="sport_checkbox"]'); ?>
             </div>
         </div>
         <div class="facets-results">
-            <?php echo do_shortcode('[facetwp facet="affichage_metier"]'); ?>
+            <?php echo do_shortcode('[facetwp template="affichage_metier_list"]'); ?>
         </div>
     </section>
 

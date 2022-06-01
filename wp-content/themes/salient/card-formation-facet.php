@@ -15,6 +15,6 @@
                         </div>
                         <span><?php the_excerpt() ?></span>
                         <div class="formations--item_cta">
-                            <a href="<?php the_permalink(); ?>">écouvrir cette formation</a>
+                            <a href="<?php the_permalink(); ?>">Découvrir cette formation</a>
                         </div>
                     </div>
