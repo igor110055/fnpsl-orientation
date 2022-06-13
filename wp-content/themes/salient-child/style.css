@@ -70,8 +70,24 @@ Version: 1.0
 	border-color: #66A361!important;
 }
 
-#menu-item-26 a {
-	color: #66A361!important;
+.button_bordered span {
+    color: #66A361!important;
+}
+
+/* Page 404 */ 
+.row404 {
+    display: flex;
+    justify-content: center;
+}
+
+.content-404 {
+    max-width: 700px;
+    margin: 0 auto!important;
+}
+
+.content-404 h1 {
+    font-size: 2em; 
+    line-height: 1.8em;
 }
 
 /* ========================================================================  
@@ -163,7 +179,7 @@ body[data-button-style*="slightly_rounded"] input[type=submit] {
     display: flex;
     justify-content: center;
     padding-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 
 .header-selector_box {
@@ -272,12 +288,13 @@ body[data-button-style*="slightly_rounded"] input[type=submit] {
 }
 
 .header-template img{
-    width: 30%; 
+    width: 100%; 
     height: auto;
     border-radius: 15px;
 }
 
 .header-template h1{
+    min-width: 65%;
     font-size: 65px;
     line-height: 100px;
     margin-bottom: 140px;
@@ -299,7 +316,7 @@ body[data-button-style*="slightly_rounded"] input[type=submit] {
 }
 
 .facets-selector {
-	min-width: 20%;
+	min-width: 25%;
 }
 
 .selector-box {
@@ -307,6 +324,12 @@ body[data-button-style*="slightly_rounded"] input[type=submit] {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0px 0px 25px rgba(0,0,0,0.08);
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.selector-box h2 {
+    font-size: 1.1em;
 }
 
 .facets-results {
@@ -429,10 +452,42 @@ iframe {
     padding-top: 50px;
 }
 
+
+
 /* ========================================================================  
 2 - Template Page Formation 
 ======================================================================== */
 
+.facetwp-facet-formation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 80px 0px;
+}
+
+.facets-formation {
+    background-color: #F9F9F9;
+    text-align: center;
+}
+
+.facets-formation h2 {
+    line-height: 1.6em;
+}
+
+.facetwp-radio {
+    background: inherit!important;
+    border-radius: 50px;
+    padding: 0px 20px;
+    border: 2px solid #66A361;
+    font-weight: 700;
+    color: #66A361;
+}
+
+.facetwp-radio.checked{
+    background-color: #66A361!important;
+    color: #fff!important;
+}
 
 
 /* ========================================================================  
@@ -446,7 +501,7 @@ iframe {
 }
 
 .formations--item{
-    width: 33%;
+    flex: 0 0 32%;
     text-align: left;
     padding: 40px; 
     border: 1px solid #8F8F8F;
@@ -455,6 +510,12 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.2s;
+}
+
+.formations--item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.08);
 }
 
 .formations--item_header {
@@ -533,8 +594,10 @@ iframe {
     margin-bottom: 80px;
 }
 
-.about-header h1 span{
+.about-header h1 strong{
     color:#66A361;
+    font-weight: 800;
+    font-family: Poppins!important;
 }
 
 .photos {
@@ -563,6 +626,7 @@ iframe {
 .photo-item img{
     max-width: 100%;
     border-radius: 5px;
+    height: auto;
 }
 
 /* Section de contenu */
@@ -719,6 +783,17 @@ label {
     margin-bottom: 30px;
 }
 
+.template_content-calendrier {
+    background-color: #66A361;
+    padding: 40px; 
+    border-radius: 15px; 
+    color: #fff;
+}
+
+.template_content-calendrier h2, .template_content-calendrier a {
+    color: #fff;
+}
+
 .template_content-calendrier h2{
     display: flex;
     margin-bottom: 10px;
@@ -728,6 +803,11 @@ label {
     width: 30px;
     height: auto;
     margin-right: 20px;
+    fill: #fff;
+}
+
+.template_content-calendrier svg path{
+    fill: #fff;
 }
 
 .template_content-i svg path{
@@ -788,6 +868,7 @@ label {
 
 .results-items article h2{
     font-size: 18px;
+    line-height: 26px;
 }
 
 .results-img {
@@ -808,26 +889,33 @@ label {
 
 .fiches-metiers_items, .formations--items, .facetwp-template {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     gap: 15px; 
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .fiches-formations_items {
     margin: 40px 0px; 
 }
 
+.card-metier_item .card-metier_item--bg {
+    transition: all 200ms;
+}
+
 .card-metier_item {
-    max-width: 33%;
+    flex: 0 0 32%;
     background-color: #fff;
     border-radius: 15px;
     position: relative;
+    transition: all 200ms;
 }
 
 .card-metier_item--bg {
     max-height: 150px;
     overflow: hidden;
+    transition: all 200ms;
 }
 
 .card-metier_item--bg img {
@@ -875,6 +963,7 @@ label {
     margin-bottom: 20px;
     font-weight: 300;
     flex-grow: 1;
+    height: 80px;
 }
 
 .card-metier_item p{
@@ -895,6 +984,15 @@ label {
     color: #fff;
 }
 
+.card-metier_item:hover .card-metier_item--bg {
+    max-height: 100px;
+    transition: all 200ms;
+}
+
+.card-metier_item:hover .card-metier_item--cta {
+    background-color: #7CC276;
+}
+
 
 /* ======================================================================== 
 Footer 
@@ -912,6 +1010,17 @@ Footer
     position: absolute;
     top: -230px;
     text-align: left;
+    width: 15%!important;
+}
+
+
+  /* Section Formation */ 
+  .template_content-formation .formations--item {
+    flex: 0 0 50%;
+}
+
+.facetwp-counter {
+    display: none;
 }
 
 /* ======================================================================== 
@@ -919,9 +1028,133 @@ Responsive Téléphone
 ======================================================================== */
 
 @media screen and (max-width: 640px) {
+    .header-section h1 {
+        font-size: 2.3em;
+        text-align: center;
+    }
+
+    #home section {
+        padding: 80px 7%;
+    }
+
+    .section-fnpsl_image img {
+        height: auto;
+    }
+
+    .header-section {
+        padding: 150px 7%!important;
+    }
+    
+    #header-outer {
+        padding: 32px 0px!important;
+    }
+
+    #header-outer[data-has-menu=true] #top .span_3, #header-outer[data-has-menu=true][data-mobile-fixed="1"] #top .span_3 {
+        height: 40px!important;
+    }
+
+    .header-selector {
+        padding: 80px 7%!important;
+    }
+
+    .fiches-metiers_items {
+        margin-top: 300px;
+    }
+
+    .card-metier_item {
+        max-width: 100%;
+    }
+
+    .header-selector_box, .fiches-metiers_items, .facetwp-template, .formations--items, .section-partenaires_logo, .header-template_content, .facet-section, .photos, .about-content_columns, .template_content-qualite--items ul, .template_content-cta {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .facets-selector {
+        width: 100%;
+    }
+
+    .header-template_content h1 {
+        font-size: 2.5em;
+        line-height: 1.5em;
+        margin-bottom: 200px;
+    }
+
+    .button-principal, .button-secondaire {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .template_content-formation .formations--item {
+        width: 100%!important;
+    }
+
+    #searchtemplate {
+        width: 100%;
+    }
+
+    .header-template_content img {
+        display: none;
+    }
+
+    .facetwp-template, .formations--items {
+        gap: 50px;
+    }
+
+    .selector-item, .formations--item {
+        width: 100%;
+    }
+
+    .section-fnpsl_content {
+        padding: 20px;
+    }
+
     .social {
         top: -130px;
         text-align: center;
+        width: 100%!important;
+    }
+    .section-partenaires_logo--item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about-header h1 {
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+    .photo-item {
+        width: 45%;
+    }
+    .photo-item:last-child {
+        margin-top: 60px;
+    }
+    .about-content {
+        padding-top: 20px!important;
+    }
+    .about-content_header {
+        font-size: 1.5em;
+        line-height: 1.7em;
+    }
+    .values-item_content {
+        width: 100%;
+        top: 90%;
+    }
+    .values-item {
+        justify-content: flex-start;
+        margin-bottom: 200px;
+    }
+    .page-template-custom {
+        padding: 0 20px;
+    }
+    .template_content {
+        width: 80%;
+    }
+    .template_content h1{
+        width: 80%;
+        margin: 0 auto 80px auto;
+        font-size: 1.5em;
     }
   }
 
@@ -936,9 +1169,6 @@ Responsive Tablette
     }
   }
 
-  /* Section Formation */ 
-.template_content-formation .formations--item {
-    width: 50%!important;
-}
+
 
 

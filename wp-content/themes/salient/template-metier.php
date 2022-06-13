@@ -103,7 +103,7 @@ get_header();
 
         <div class="template-section template_content-cta">
             <div class="template_content-cta--download button-principal cta-style">
-                <a href="<?php the_field('downloadlink_metier') ?>" target="_blank"><img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/icone-telechargement-fnpsl.svg" alt="Icone téléchargement de la fiche métier des sports et loisirs">Téléchargez cette fiche en PDF</a>
+                <a href="<?php the_field('downloadlink_metier') ?>" target="_blank"><img src="https://www.metiersdusport.fr/wp-content/uploads/2022/05/icone-telechargement-fnpsl.svg" alt="Icone téléchargement de la fiche métier des sports et loisirs">Téléchargez cette fiche en PDF</a>
             </div>
             <div class="template_content-cta--download button-secondaire cta-style">
                 <a href="">Trouvez l’association Profession Sport & Loisirs autour de toi pour plus de renseignement</a>

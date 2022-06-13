@@ -5,7 +5,7 @@
             <div class="card-metier_item--content">
                 <div class="card-metier_item--icon">
                     <?php $icon_metier = get_field('icone_metier'); ?>
-                    <img src="<?php echo esc_url($icon_metier['url']) ?>" alt="<?php echo esc_url($icon_metier['alt']) ?>">
+                    <img src="<?php echo esc_url($icon_metier['url']) ?>" alt="<?php echo esc_url($icon_metier['alt']) ?>" width="30px" style="fill:#66A361;" />
                 </div>
                 <a href="<?php the_permalink(); ?>"><h2><?php the_title() ?></h2></a>
                 <?php the_excerpt() ?>

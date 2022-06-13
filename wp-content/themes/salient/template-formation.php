@@ -38,7 +38,7 @@ get_header();
         </div><!-- /.template-section -->
 
         <div class="template-section template_content-calendrier">
-            <h2><img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/06/calendrier-1.svg" alt="calendrier de formation fnpsl" width="30px">Calendrier des formations</h2>
+            <h2><img src="https://www.metiersdusport.fr/wp-content/uploads/2022/06/calendrier-1.svg" alt="calendrier de formation fnpsl" width="30px">Calendrier des formations</h2>
             <hr>
             <?php the_field('calendrier_formation'); ?>
         </div><!-- /.template-section -->
@@ -58,7 +58,7 @@ get_header();
 
         <div class="template-section template_content-cta">
             <div class="template_content-cta--download button-principal cta-style">
-                <a href="<?php the_field('download_link_formation') ?>" target="_blank"><img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/icone-telechargement-fnpsl.svg" alt="Icone téléchargement de la fiche métier des sports et loisirs">Téléchargez cette fiche diplôme en PDF</a>
+                <a href="<?php the_field('download_link_formation') ?>" target="_blank"><img src="https://www.metiersdusport.fr/wp-content/uploads/2022/05/icone-telechargement-fnpsl.svg" alt="Icone téléchargement de la fiche métier des sports et loisirs">Téléchargez cette fiche diplôme en PDF</a>
             </div>
             <div class="template_content-cta--download button-secondaire cta-style">
                 <a href="/nous-contacter">Contacter la FNPSL pour plus d'informations</a>

@@ -7,7 +7,7 @@
                                 $size = 'full';
                             ?>
                             <?php echo wp_get_attachment_image( $image, $size ); ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" width="30px" style="fill:#fff" />
                             </div>
                             <div class="formation--item_title">
                                 <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>

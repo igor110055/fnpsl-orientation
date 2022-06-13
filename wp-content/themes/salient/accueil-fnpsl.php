@@ -15,7 +15,7 @@ get_header();
 ?>
 
 <main id="home">
-    <section class="header-section" style="background-image:url('https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/fnps-a-remplacer-video-fond.png'); background-size:cover;">
+    <section class="header-section" style="background-image:url('https://www.metiersdusport.fr/wp-content/uploads/2022/05/fnps-a-remplacer-video-fond.png'); background-size:cover;">
         <h1>Trouve ta voie en puisant<br> dans ta passion pour le sport</h1>
         <!-- Formulaire de recherche -->
         <div class="header-section_search">
@@ -50,12 +50,12 @@ get_header();
                     <?php echo do_shortcode('[facetwp facet="cat_metier"]'); ?>
                 </div>
                 <div class="selector-formation selector-item">
-                    <?php echo do_shortcode('[facetwp facet="formation"]'); ?>
+                    <?php echo do_shortcode('[facetwp facet="formation_home"]'); ?>
                 </div>
             </div>
-            <div class="button-secondaire cta-style">
+            <!--<div class="button-secondaire cta-style">
                     <a href="javascript:;" onclick="FWP.refresh(); window.location.reload();">Appliquez mes préférences</a>
-            </div>
+            </div>-->
         </div>
         <div class="fiches-metiers_items">
             <?php echo do_shortcode('[facetwp template="affichage_metier"]'); ?>
@@ -81,7 +81,7 @@ get_header();
     <section class="section-fnpsl">
         <div class="section-fnpsl_div">
             <div class="section-fnpsl_image">   
-                <img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/fnpsl.jpeg" alt="fnspl">
+                <img src="https://www.metiersdusport.fr/wp-content/uploads/2022/05/fnpsl.jpeg" alt="fnspl">
             </div>
             <div class="section-fnpsl_content">
                 <h2>À ropos de la Fédération National des Professions du Sport et des Loisirs.</h2>
@@ -101,16 +101,16 @@ Présent sur l’ensemble du territoire français, le réseau PSL accompagne les
         </div>
         <div class="section-partenaires_logo">
             <div class="section-partenaires_logo--item">
-                <img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/Ministère_chargé_des_Sports-1.png" alt="">
+                <img src="https://www.metiersdusport.fr/wp-content/uploads/2022/05/Ministère_chargé_des_Sports-1.png" alt="">
             </div>
             <div class="section-partenaires_logo--item">
-                <img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/1200px-Logo_Macif-1.png" alt="">
+                <img src="https://www.metiersdusport.fr/wp-content/uploads/2022/05/1200px-Logo_Macif-1.png" alt="">
             </div>
             <div class="section-partenaires_logo--item">
-                <img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/logo-chorum-vyv-300x138-1.png" alt="">
+                <img src="https://www.metiersdusport.fr/wp-content/uploads/2022/05/logo-chorum-vyv-300x138-1.png" alt="">
             </div>
             <div class="section-partenaires_logo--item">
-                <img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/1280px-Logo_Pôle_Emploi_2008-1.png" alt="">
+                <img src="https://www.metiersdusport.fr/wp-content/uploads/2022/05/1280px-Logo_Pôle_Emploi_2008-1.png" alt="">
             </div>
         </div>
     </section>

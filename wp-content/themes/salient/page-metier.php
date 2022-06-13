@@ -19,8 +19,9 @@ get_header();
     <section class="header-template">
         <div class="header-template_container">
             <div class="header-template_content">
-                <h1>Trouve de l’information sur les métiers du sport et des loisirs</h1>
-                <img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/pexels-andrew-shelley-8454458-scaled.jpg" alt="">
+                <?php $image = get_field('page-img') ?>
+                <h1><?php the_field('page-title') ?></h1>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_url($image['alt']); ?>">
             </div>
             <div class="header-section_search" id="searchtemplate">
                 <form role="search" method="get" class="search-form" 
@@ -44,9 +45,21 @@ get_header();
     <section class="facet-section">
         <div class="facets-selector">
             <div class="sport-selector selector-box">
-                <h2>Sports</h2>
+                <div class="selector-box_header">
+                    <h2>Sport</h2>
+                </div>
                 <hr>
                 <?php echo do_shortcode('[facetwp facet="sport_checkbox"]'); ?>
+            </div>
+            <div class="cat-selector selector-box">
+                <h2>Catégorie</h2>
+                <hr>
+                <?php echo do_shortcode('[facetwp facet="cat_metier_check"]'); ?>
+            </div>
+            <div class="formation-selector selector-box">
+                <h2>Formation</h2>
+                <hr>
+                <?php echo do_shortcode('[facetwp facet="formation_checkbox"]'); ?>
             </div>
         </div>
         <div class="facets-results">

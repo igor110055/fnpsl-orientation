@@ -34,23 +34,17 @@ $page_404_home_button      = ( ! empty( $nectar_options['page-404-home-button'] 
 	
 	<div class="container main-content">
 		
-		<div class="row">
+		<div class="row row404">
 			
-			<div class="col span_12">
-				
-				<div id="error-404" 
-				<?php
-				if ( ! empty( $page_404_font_color ) ) {
-					echo 'data-cc="true"'; }
-				?>
-				 >
-					<h1><?php echo esc_html__( '404', 'salient' ); ?></h1>
-					<h2><?php echo esc_html__( 'Page Not Found', 'salient' ); ?></h2>
-					
-					<?php if ( $page_404_home_button === '1' ) { ?>
-						   <a class="nectar-button large regular-button accent-color has-icon" data-color-override="false" data-hover-color-override="false" href="<?php echo esc_url( home_url() ); ?>"><span><?php echo esc_html__( 'Back Home', 'salient' ); ?> </span><i class="icon-button-arrow"></i></a>
-						<?php } ?>
-				</div>
+			<div class="col span_12 content-404" style="text-align:center; margin: 0px auto;">
+
+			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets8.lottiefiles.com/packages/lf20_qgdcqwbg.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px; margin: 0 auto;"  loop  autoplay></lottie-player>
+				<h1>Oops, faute 404, vous êtes hors jeu !</h1>
+				<p>Malheureusement, nous n'avons pas trouvé le contenu que vous cherchez sur ce site. Si vous cherchiez un contenu sur les métiers du sport et de l'animation en particulier, n'hésitez pas à nous contacter. Nous mettons à jour régulièrement les fiches.</p>
+				<div class="button-secondaire cta-style">
+                	<a href="https://www.metiersdusport.fr/">Revenir à la page d'accueil</a>
+        		</div>
 				
 			</div><!--/span_12-->
 			

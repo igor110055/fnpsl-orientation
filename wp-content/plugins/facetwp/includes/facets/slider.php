@@ -5,7 +5,8 @@ class FacetWP_Facet_Slider extends FacetWP_Facet
 
     function __construct() {
         $this->label = __( 'Slider', 'fwp' );
-        $this->fields = [ 'source_other', 'compare_type', 'prefix', 'suffix', 'slider_format', 'step' ];
+        $this->fields = [ 'source_other', 'compare_type', 'prefix', 'suffix',
+            'reset_text', 'slider_format', 'step' ];
 
         add_filter( 'facetwp_render_output', [ $this, 'maybe_prevent_facet_html' ], 10, 2 );
     }
@@ -15,12 +16,18 @@ class FacetWP_Facet_Slider extends FacetWP_Facet
      * Generate the facet HTML
      */
     function render( $params ) {
+        $facet = $params['facet'];
+        $reset_text = __( 'Reset', 'fwp-front' );
+
+        if ( ! empty( $facet['reset_text'] ) ) {
+            $reset_text = facetwp_i18n( $facet['reset_text'] );
+        }
 
         $output = '<div class="facetwp-slider-wrap">';
         $output .= '<div class="facetwp-slider"></div>';
         $output .= '</div>';
         $output .= '<span class="facetwp-slider-label"></span>';
-        $output .= '<div><input type="button" class="facetwp-slider-reset" value="' . __( 'Reset', 'fwp-front' ) . '" /></div>';
+        $output .= '<div><input type="button" class="facetwp-slider-reset" value="' . esc_attr( $reset_text ) . '" /></div>';
         return $output;
     }
 

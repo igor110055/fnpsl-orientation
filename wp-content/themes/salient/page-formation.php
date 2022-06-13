@@ -19,8 +19,9 @@ get_header();
     <section class="header-template">
         <div class="header-template_container">
             <div class="header-template_content">
-                <h1>Se former aux métiers du sports et des loisirs</h1>
-                <img src="https://www.lovc3692.odns.fr/wp-content/uploads/2022/05/pexels-andrew-shelley-8454458-scaled.jpg" alt="">
+                <?php $image = get_field('page-img') ?>
+                <h1><?php the_field('page-title') ?></h1>
+                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_url($image['alt']); ?>">
             </div>
             <div class="header-section_search" id="searchtemplate">
                 <form role="search" method="get" class="search-form" 
@@ -43,13 +44,15 @@ get_header();
     </section>
     <section class="facets-formation">
         <div class="facets">
-            <h2>Nous référençons pour toi les formations qui peuvent t’aider à accéder aux metiers du sport et des loisirs.</h2>
+            <h2>Nous référençons pour toi le.s formations qui peuvent t’aider à accéder aux metiers du sport et des loisirs.</h2>
             <div class="facets-items">
-
+                <?php echo do_shortcode('[facetwp facet="formation"]'); ?>
             </div>
         </div>
+    </section>
+    <section class="facets-resultats">
         <div class="facets-results">
-            
+            <?php echo do_shortcode('[facetwp template="affichage_formation"]'); ?>
         </div>
     </section>
 

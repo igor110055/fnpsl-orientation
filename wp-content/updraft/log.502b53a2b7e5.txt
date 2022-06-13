@@ -1,0 +1,269 @@
+0000.000 (0) Opened log file at time: Mon, 13 Jun 2022 07:13:48 +0000 on https://www.metiersdusport.fr
+0000.003 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.22.12 WP: 6.0 PHP: 7.4.29 (litespeed, Linux camulus.o2switch.net 4.18.0-348.12.2.lve.el7h.x86_64 #1 SMP Mon Jan 24 05:45:10 EST 2022 x86_64) MySQL: 10.5.16-MariaDB (max packet size=268435456) WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 4096M (used: 39.1M | 40M) multisite: N openssl: OpenSSL 1.1.1n  15 Mar 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.043 (0) Free space on disk containing Updraft's temporary directory: 3950866.2 MB
+0000.046 (0) Tasks: Backup files:  (schedule: weekly) Backup DB: 1 (schedule: daily)
+0000.048 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 1
+0000.051 (0) Requesting semaphore lock (d) (apparently via scheduler: last_scheduled_action_called_at=1655021656, seconds_ago=82772)
+0000.055 (0) Set semaphore last lock (d) time to 2022-06-13 07:13:48
+0000.056 (0) Semaphore lock (d) complete
+0000.062 (0) Backup run: resumption=0, nonce=502b53a2b7e5, file_nonce=502b53a2b7e5 begun at=1655104428 (0s ago), job type=backup
+0000.064 (0) Scheduling a resumption (1) after 300 seconds (1655104728) in case this run gets aborted
+0000.098 (0) This backup run is not intended for files - skipping
+0000.100 (0) Beginning creation of database dump (WordPress DB)
+0000.101 (0) Couldn't get the sql_mode value (N;); will not attempt any adjustment
+0000.104 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.130 (0) Output: /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `fnpsl_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40101 SET character_set_client = utf8 */;\n (truncated - 1549 bytes total)
+0000.132 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.145 (0) Table fnpsl_options: Total expected rows (via COUNT): 380
+0000.146 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.238 (0) Table fnpsl_options: Rows added in this batch (next record: 6758): 376 (uncompressed bytes in this segment=1035396) in 0.10 seconds
+0000.246 (0) Table fnpsl_options: finishing file(s) (2, 216.6 KB)
+0000.251 (0) Table fnpsl_users: Total expected rows (via COUNT): 1
+0000.252 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.255 (0) Table fnpsl_users: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1398) in 0.01 seconds
+0000.260 (0) Table fnpsl_users: finishing file(s) (2, 0.6 KB)
+0000.267 (0) Table fnpsl_usermeta: Total expected rows (via COUNT): 35
+0000.268 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.272 (0) Table fnpsl_usermeta: Rows added in this batch (next record: 35): 35 (uncompressed bytes in this segment=9727) in 0.01 seconds
+0000.278 (0) Table fnpsl_usermeta: finishing file(s) (2, 3 KB)
+0000.285 (0) Table fnpsl_actionscheduler_actions: Total expected rows (via COUNT): 43
+0000.286 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.289 (0) Table fnpsl_actionscheduler_actions: Rows added in this batch (next record: 328): 43 (uncompressed bytes in this segment=19671) in 0.01 seconds
+0000.296 (0) Table fnpsl_actionscheduler_actions: finishing file(s) (2, 1.9 KB)
+0000.300 (0) Table fnpsl_actionscheduler_claims: Total expected rows (via COUNT): 0
+0000.303 (0) Table fnpsl_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=640) in 0.00 seconds
+0000.308 (0) Table fnpsl_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.313 (0) Table fnpsl_actionscheduler_groups: Total expected rows (via COUNT): 2
+0000.314 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.318 (0) Table fnpsl_actionscheduler_groups: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=724) in 0.01 seconds
+0000.323 (0) Table fnpsl_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.330 (0) Table fnpsl_actionscheduler_logs: Total expected rows (via COUNT): 129
+0000.331 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.336 (0) Table fnpsl_actionscheduler_logs: Rows added in this batch (next record: 959): 129 (uncompressed bytes in this segment=11920) in 0.01 seconds
+0000.341 (0) Table fnpsl_actionscheduler_logs: finishing file(s) (2, 1.6 KB)
+0000.350 (0) Table fnpsl_commentmeta: Total expected rows (via COUNT): 0
+0000.353 (0) Table fnpsl_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=702) in 0.01 seconds
+0000.358 (0) Table fnpsl_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.364 (0) Table fnpsl_comments: Total expected rows (via COUNT): 1
+0000.365 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.368 (0) Table fnpsl_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=2125) in 0.01 seconds
+0000.373 (0) Table fnpsl_comments: finishing file(s) (2, 0.8 KB)
+0000.380 (0) Table fnpsl_imagify_files: Total expected rows (via COUNT): 0
+0000.383 (0) Table fnpsl_imagify_files: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1509) in 0.01 seconds
+0000.389 (0) Table fnpsl_imagify_files: finishing file(s) (2, 0.6 KB)
+0000.394 (0) Table fnpsl_imagify_folders: Total expected rows (via COUNT): 0
+0000.396 (0) Table fnpsl_imagify_folders: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=650) in 0.00 seconds
+0000.401 (0) Table fnpsl_imagify_folders: finishing file(s) (2, 0.4 KB)
+0000.408 (0) Table fnpsl_links: Total expected rows (via COUNT): 0
+0000.410 (0) Table fnpsl_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1284) in 0.01 seconds
+0000.415 (0) Table fnpsl_links: finishing file(s) (2, 0.5 KB)
+0000.423 (0) Table fnpsl_postmeta: Total expected rows (approximate): 1301
+0000.451 (0) Table fnpsl_postmeta: Rows added in this batch (next record: 1437): 1300 (uncompressed bytes in this segment=284403) in 0.03 seconds
+0000.457 (0) Table fnpsl_postmeta: finishing file(s) (2, 34.9 KB)
+0000.464 (0) Table fnpsl_posts: Total expected rows (via COUNT): 174
+0000.465 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.483 (0) Table fnpsl_posts: Rows added in this batch (next record: 198): 174 (uncompressed bytes in this segment=262162) in 0.02 seconds
+0000.490 (0) Table fnpsl_posts: finishing file(s) (2, 22.2 KB)
+0000.496 (0) Table fnpsl_searchwp_index: Total expected rows (via COUNT): 218
+0000.497 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.501 (0) Table fnpsl_searchwp_index: Rows added in this batch (next record: 322): 218 (uncompressed bytes in this segment=14206) in 0.01 seconds
+0000.506 (0) Table fnpsl_searchwp_index: finishing file(s) (2, 1.8 KB)
+0000.512 (0) Table fnpsl_searchwp_log: Total expected rows (via COUNT): 86
+0000.513 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.517 (0) Table fnpsl_searchwp_log: Rows added in this batch (next record: 86): 86 (uncompressed bytes in this segment=6074) in 0.01 seconds
+0000.521 (0) Table fnpsl_searchwp_log: finishing file(s) (2, 1.3 KB)
+0000.526 (0) Table fnpsl_searchwp_status: Total expected rows (via COUNT): 7
+0000.527 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.531 (0) Table fnpsl_searchwp_status: Rows added in this batch (next record: 10): 7 (uncompressed bytes in this segment=1605) in 0.01 seconds
+0000.535 (0) Table fnpsl_searchwp_status: finishing file(s) (2, 0.6 KB)
+0000.540 (0) Table fnpsl_searchwp_tokens: Total expected rows (via COUNT): 127
+0000.541 (0) Table is relatively small; fetch_rows will thus be: 250 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.546 (0) Table fnpsl_searchwp_tokens: Rows added in this batch (next record: 127): 127 (uncompressed bytes in this segment=4686) in 0.01 seconds
+0000.550 (0) Table fnpsl_searchwp_tokens: finishing file(s) (2, 1.6 KB)
+0000.555 (0) Table fnpsl_term_relationships: Total expected rows (approximate): 36
+0000.558 (0) Table fnpsl_term_relationships: Rows added in this batch (next record: 100000): 37 (uncompressed bytes in this segment=1213) in 0.00 seconds
+0000.563 (0) Table fnpsl_term_relationships: finishing file(s) (2, 0.5 KB)
+0000.570 (0) Table fnpsl_term_taxonomy: Total expected rows (via COUNT): 21
+0000.571 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.574 (0) Table fnpsl_term_taxonomy: Rows added in this batch (next record: 23): 21 (uncompressed bytes in this segment=1621) in 0.01 seconds
+0000.580 (0) Table fnpsl_term_taxonomy: finishing file(s) (2, 0.6 KB)
+0000.586 (0) Table fnpsl_termmeta: Total expected rows (via COUNT): 0
+0000.589 (0) Table fnpsl_termmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=675) in 0.01 seconds
+0000.595 (0) Table fnpsl_termmeta: finishing file(s) (2, 0.4 KB)
+0000.599 (0) Table fnpsl_terms: Total expected rows (via COUNT): 21
+0000.601 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.604 (0) Table fnpsl_terms: Rows added in this batch (next record: 23): 21 (uncompressed bytes in this segment=1594) in 0.01 seconds
+0000.609 (0) Table fnpsl_terms: finishing file(s) (2, 0.8 KB)
+0000.618 (0) Table fnpsl_wpr_rucss_resources: Total expected rows (via COUNT): 0
+0000.621 (0) Table fnpsl_wpr_rucss_resources: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1144) in 0.01 seconds
+0000.627 (0) Table fnpsl_wpr_rucss_resources: finishing file(s) (2, 0.5 KB)
+0000.637 (0) Table fnpsl_wpr_rucss_used_css: Total expected rows (via COUNT): 10
+0000.638 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.642 (0) Table fnpsl_wpr_rucss_used_css: Rows added in this batch (next record: 28): 10 (uncompressed bytes in this segment=2788) in 0.01 seconds
+0000.648 (0) Table fnpsl_wpr_rucss_used_css: finishing file(s) (2, 0.9 KB)
+0000.649 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_acl
+0000.651 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_blocks
+0000.652 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_countries
+0000.653 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_lab
+0000.654 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_lab_ip
+0000.655 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_lab_net
+0000.657 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_log
+0000.658 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_qmem
+0000.659 (0) Skipping table (lacks our prefix (fnpsl_)): cerber_traffic
+0000.664 (0) Table fnpsl_cerber_files: Total expected rows (approximate): 0
+0000.667 (0) Table fnpsl_cerber_files: Rows added in this batch (next record: 0): 0 (uncompressed bytes in this segment=1367) in 0.00 seconds
+0000.671 (0) Table fnpsl_cerber_files: finishing file(s) (2, 0.4 KB)
+0000.676 (0) Table fnpsl_cerber_sets: Total expected rows (approximate): 18
+0000.720 (0) Table fnpsl_cerber_sets: Rows added in this batch (next record: 1000): 18 (uncompressed bytes in this segment=458687) in 0.04 seconds
+0000.726 (0) Table fnpsl_cerber_sets: finishing file(s) (2, 173.9 KB)
+0000.731 (0) Table fnpsl_cerber_uss: Total expected rows (approximate): 1
+0000.733 (0) Table fnpsl_cerber_uss: Rows added in this batch (next record: 1000): 1 (uncompressed bytes in this segment=899) in 0.00 seconds
+0000.737 (0) Table fnpsl_cerber_uss: finishing file(s) (2, 0.5 KB)
+0000.742 (0) Table fnpsl_facetwp_index: Total expected rows (via COUNT): 19
+0000.743 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.747 (0) Table fnpsl_facetwp_index: Rows added in this batch (next record: 19): 19 (uncompressed bytes in this segment=2197) in 0.01 seconds
+0000.751 (0) Table fnpsl_facetwp_index: finishing file(s) (2, 0.6 KB)
+0000.757 (0) Table fnpsl_yoast_indexable: Total expected rows (via COUNT): 124
+0000.758 (0) Table is relatively small; fetch_rows will thus be: 200 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.770 (0) Table fnpsl_yoast_indexable: Rows added in this batch (next record: 138): 124 (uncompressed bytes in this segment=73904) in 0.02 seconds
+0000.776 (0) Table fnpsl_yoast_indexable: finishing file(s) (2, 10.5 KB)
+0000.779 (0) Table fnpsl_yoast_indexable_hierarchy: Total expected rows (approximate): 105
+0000.783 (0) Table fnpsl_yoast_indexable_hierarchy: Rows added in this batch (next record: 1000): 105 (uncompressed bytes in this segment=2562) in 0.00 seconds
+0000.787 (0) Table fnpsl_yoast_indexable_hierarchy: finishing file(s) (2, 0.7 KB)
+0000.791 (0) Table fnpsl_yoast_migrations: Total expected rows (via COUNT): 23
+0000.792 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.795 (0) Table fnpsl_yoast_migrations: Rows added in this batch (next record: 23): 23 (uncompressed bytes in this segment=1259) in 0.00 seconds
+0000.799 (0) Table fnpsl_yoast_migrations: finishing file(s) (2, 0.6 KB)
+0000.803 (0) Table fnpsl_yoast_primary_term: Total expected rows (via COUNT): 5
+0000.804 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.806 (0) Table fnpsl_yoast_primary_term: Rows added in this batch (next record: 5): 5 (uncompressed bytes in this segment=1310) in 0.00 seconds
+0000.810 (0) Table fnpsl_yoast_primary_term: finishing file(s) (2, 0.6 KB)
+0000.815 (0) Table fnpsl_yoast_seo_links: Total expected rows (via COUNT): 1
+0000.816 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.818 (0) Table fnpsl_yoast_seo_links: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1186) in 0.00 seconds
+0000.823 (0) Table fnpsl_yoast_seo_links: finishing file(s) (2, 0.5 KB)
+0000.825 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_options.table.tmpr6759.gz (1/42/fopen): adding to final database dump
+0000.833 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_options.table.gz (2/42/fopen): adding to final database dump
+0000.834 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_users.table.tmpr2.gz (3/42/fopen): adding to final database dump
+0000.835 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_users.table.gz (4/42/fopen): adding to final database dump
+0000.837 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_usermeta.table.tmpr36.gz (5/42/fopen): adding to final database dump
+0000.838 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_usermeta.table.gz (6/42/fopen): adding to final database dump
+0000.839 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_actions.table.tmpr329.gz (7/42/fopen): adding to final database dump
+0000.841 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_actions.table.gz (8/42/fopen): adding to final database dump
+0000.842 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_claims.table.tmpr0.gz (9/42/fopen): adding to final database dump
+0000.844 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_claims.table.gz (10/42/fopen): adding to final database dump
+0000.845 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_groups.table.tmpr3.gz (11/42/fopen): adding to final database dump
+0000.846 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_groups.table.gz (12/42/fopen): adding to final database dump
+0000.848 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_logs.table.tmpr960.gz (13/42/fopen): adding to final database dump
+0000.849 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_actionscheduler_logs.table.gz (14/42/fopen): adding to final database dump
+0000.850 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_commentmeta.table.tmpr0.gz (15/42/fopen): adding to final database dump
+0000.852 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_commentmeta.table.gz (16/42/fopen): adding to final database dump
+0000.853 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_comments.table.tmpr2.gz (17/42/fopen): adding to final database dump
+0000.854 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_comments.table.gz (18/42/fopen): adding to final database dump
+0000.855 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_imagify_files.table.tmpr0.gz (19/42/fopen): adding to final database dump
+0000.857 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_imagify_files.table.gz (20/42/fopen): adding to final database dump
+0000.858 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_imagify_folders.table.tmpr0.gz (21/42/fopen): adding to final database dump
+0000.859 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_imagify_folders.table.gz (22/42/fopen): adding to final database dump
+0000.861 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_links.table.tmpr0.gz (23/42/fopen): adding to final database dump
+0000.862 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_links.table.gz (24/42/fopen): adding to final database dump
+0000.863 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_postmeta.table.tmpr1438.gz (25/42/fopen): adding to final database dump
+0000.866 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_postmeta.table.gz (26/42/fopen): adding to final database dump
+0000.867 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_posts.table.tmpr199.gz (27/42/fopen): adding to final database dump
+0000.869 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_posts.table.gz (28/42/fopen): adding to final database dump
+0000.870 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_index.table.tmpr323.gz (29/42/fopen): adding to final database dump
+0000.871 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_index.table.gz (30/42/fopen): adding to final database dump
+0000.872 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_log.table.tmpr87.gz (31/42/fopen): adding to final database dump
+0000.874 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_log.table.gz (32/42/fopen): adding to final database dump
+0000.875 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_status.table.tmpr11.gz (33/42/fopen): adding to final database dump
+0000.877 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_status.table.gz (34/42/fopen): adding to final database dump
+0000.878 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_tokens.table.tmpr128.gz (35/42/fopen): adding to final database dump
+0000.879 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_searchwp_tokens.table.gz (36/42/fopen): adding to final database dump
+0000.881 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_term_relationships.table.tmpr100001.gz (37/42/fopen): adding to final database dump
+0000.882 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_term_relationships.table.gz (38/42/fopen): adding to final database dump
+0000.883 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_term_taxonomy.table.tmpr24.gz (39/42/fopen): adding to final database dump
+0000.885 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_term_taxonomy.table.gz (40/42/fopen): adding to final database dump
+0000.886 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_termmeta.table.tmpr0.gz (41/42/fopen): adding to final database dump
+0000.887 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_termmeta.table.gz (42/42/fopen): adding to final database dump
+0000.889 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_terms.table.tmpr24.gz (43/42/fopen): adding to final database dump
+0000.890 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_terms.table.gz (44/42/fopen): adding to final database dump
+0000.891 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_wpr_rucss_resources.table.tmpr0.gz (45/42/fopen): adding to final database dump
+0000.893 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_wpr_rucss_resources.table.gz (46/42/fopen): adding to final database dump
+0000.894 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_wpr_rucss_used_css.table.tmpr29.gz (47/42/fopen): adding to final database dump
+0000.895 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_wpr_rucss_used_css.table.gz (48/42/fopen): adding to final database dump
+0000.897 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_cerber_files.table.tmpr1.gz (49/42/fopen): adding to final database dump
+0000.898 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_cerber_files.table.gz (50/42/fopen): adding to final database dump
+0000.899 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_cerber_sets.table.tmpr1001.gz (51/42/fopen): adding to final database dump
+0000.906 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_cerber_sets.table.gz (52/42/fopen): adding to final database dump
+0000.907 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_cerber_uss.table.tmpr1001.gz (53/42/fopen): adding to final database dump
+0000.909 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_cerber_uss.table.gz (54/42/fopen): adding to final database dump
+0000.910 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_facetwp_index.table.tmpr20.gz (55/42/fopen): adding to final database dump
+0000.912 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_facetwp_index.table.gz (56/42/fopen): adding to final database dump
+0000.913 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_indexable.table.tmpr139.gz (57/42/fopen): adding to final database dump
+0000.915 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_indexable.table.gz (58/42/fopen): adding to final database dump
+0000.916 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_indexable_hierarchy.table.tmpr1001.gz (59/42/fopen): adding to final database dump
+0000.917 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_indexable_hierarchy.table.gz (60/42/fopen): adding to final database dump
+0000.919 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_migrations.table.tmpr24.gz (61/42/fopen): adding to final database dump
+0000.920 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_migrations.table.gz (62/42/fopen): adding to final database dump
+0000.921 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_primary_term.table.tmpr6.gz (63/42/fopen): adding to final database dump
+0000.923 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_primary_term.table.gz (64/42/fopen): adding to final database dump
+0000.924 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_seo_links.table.tmpr2.gz (65/42/fopen): adding to final database dump
+0000.925 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db-table-fnpsl_yoast_seo_links.table.gz (66/42/fopen): adding to final database dump
+0000.931 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db.gz: finished writing out complete database file (481.2 KB)
+0000.952 (0) Total database tables backed up: 33 (backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db.gz, size: 492862, sha1: e377c2cc1c2ca1df09e3a4571d79a124cadaefcb, sha256: 75dbe70cd14db75c56073c85b328ef45880fa2bac61c2677bd07ae7e6b29926b)
+0000.961 (0) backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db.gz: db: This file has not yet been successfully uploaded: will queue
+0000.962 (0) Saving backup history. Total backup size: 481.3 KB
+0000.966 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0000.970 (0) Cloud backup selection (1/1): googledrive with instance (1/1) (last)
+0000.972 (0) Beginning dispatch of backup to remote (googledrive) (instance identifier s-3c63c3489630278ac13cedcbcde25f83)
+0003.388 (0) Google Drive: quota usage: used=57576.6 MB, total=133120 MB, available=75543.4 MB
+0003.390 (0) Google Drive: backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db.gz: Attempting to upload to Google Drive (into folder id: 1Vt3j5deCtKcC1ebPXqQxT9WNkVx8jnj5)
+0005.180 (0) Googledrive chunked upload: 100 % uploaded
+0005.184 (0) Google Drive: OK: Archive backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db.gz uploaded in 1.79 seconds
+0005.185 (0) Recording as successfully uploaded: backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db.gz
+0005.188 (0) Deleting local file: backup_2022-06-13-0713_FNPSL_502b53a2b7e5-db.gz: OK
+0005.191 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=5
+0005.193 (0) Number of backup sets in history: 8; groups (db): 1
+0005.194 (0) Examining (for databases) backup set with group_id=0, nonce=502b53a2b7e5, datestamp=1655104428 (Jun 13 2022 07:13:48)
+0005.195 (0) This backup set is the backup set just made, so will not be deleted.
+0005.195 (0) Examining (for databases) backup set with group_id=0, nonce=a76795765d87, datestamp=1655021656 (Jun 12 2022 08:14:16)
+0005.196 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0005.197 (0) Examining (for databases) backup set with group_id=0, nonce=25a4dfc45116, datestamp=1654933777 (Jun 11 2022 07:49:37)
+0005.197 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0005.197 (0) Examining (for databases) backup set with group_id=0, nonce=6df125b66f3e, datestamp=1654845512 (Jun 10 2022 07:18:32)
+0005.197 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0005.197 (0) Examining (for databases) backup set with group_id=0, nonce=56e3b29ad712, datestamp=1654771133 (Jun 09 2022 10:38:53)
+0005.197 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0005.197 (0) Examining (for databases) backup set with group_id=0, nonce=a4222052dbda, datestamp=1654672814 (Jun 08 2022 07:20:14)
+0005.197 (0) 1654672814: db: this set includes a database (backup_2022-06-08-0720_FNPSL_a4222052dbda-db.gz); db count is now 5
+0005.197 (0) 1654672814: db: over retain limit (5); will delete this database
+0005.197 (0) Delete file: backup_2022-06-08-0720_FNPSL_a4222052dbda-db.gz, service=googledrive
+0023.228 (0) Google Drive: backup_2022-06-08-0720_FNPSL_a4222052dbda-db.gz: Deletion successful
+0023.240 (0) This backup set is now empty; will remove from history
+0023.241 (0) Deleting log file (log.a4222052dbda.txt)
+0023.242 (0) Examining (for databases) backup set with group_id=0, nonce=5b7ceffc3292, datestamp=1654591624 (Jun 07 2022 08:47:04)
+0023.243 (0) Examining (for databases) backup set with group_id=0, nonce=e970c34c1380, datestamp=1653981221 (May 31 2022 07:13:41)
+0023.243 (0) Number of backup sets in history: 7; groups (files): 1
+0023.244 (0) Examining (for files) backup set with nonce=502b53a2b7e5, datestamp=1655104428 (Jun 13 2022 07:13:48)
+0023.245 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0023.246 (0) Examining (for files) backup set with nonce=a76795765d87, datestamp=1655021656 (Jun 12 2022 08:14:16)
+0023.246 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0023.246 (0) Examining (for files) backup set with nonce=25a4dfc45116, datestamp=1654933777 (Jun 11 2022 07:49:37)
+0023.246 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0023.246 (0) Examining (for files) backup set with nonce=6df125b66f3e, datestamp=1654845512 (Jun 10 2022 07:18:32)
+0023.246 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0023.246 (0) Examining (for files) backup set with nonce=56e3b29ad712, datestamp=1654771133 (Jun 09 2022 10:38:53)
+0023.246 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0023.246 (0) Examining (for files) backup set with nonce=5b7ceffc3292, datestamp=1654591624 (Jun 07 2022 08:47:04)
+0023.246 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0023.248 (0) Examining (for files) backup set with nonce=e970c34c1380, datestamp=1653981221 (May 31 2022 07:13:41)
+0023.248 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0023.248 (0) Retain: saving new backup history (sets now: 7) and finishing retain operation
+0023.253 (0) Resume backup (502b53a2b7e5, 0): finish run
+0023.256 (0) Decremented the semaphore (d) by 1
+0023.258 (0) Semaphore (d) unlocked
+0023.259 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0023.263 (0) The backup apparently succeeded and is now complete
+0023.265 (0) Fetching RSS news feed
+0023.369 (0) Fetched RSS news feed; result is a: SimplePie
+0023.406 (0) Sending email ('Base de données uniquement (les fichiers n'étaient pas inclus dans cette sauvegarde planifiée)') report (attachments: 0, size: 0 KB) to: trist...
+0023.786 (0) La sauvegarde a apparemment réussi et est maintenant terminée
